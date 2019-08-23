@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 
 import Login from "./components/Login";
@@ -16,7 +16,6 @@ const PrivateRoute = ({component: Component, ...rest}) => {
 };
 
 function App() {
-  const [colorList, setColorList] = useState([]);
   return (
     <Router>
       <div className="App">
